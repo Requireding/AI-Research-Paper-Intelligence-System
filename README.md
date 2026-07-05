@@ -43,7 +43,7 @@ The system is built sequentially in a modular Google Colab pipeline:
   * `sentence-transformers` (State-of-the-Art Dense Text Embeddings)
 
 ---
-**Student Self-Analysis & Observations**
+**Self-Analysis & Observations**
 ## 🧪 Independent Evaluation & Advanced System Extensions
 
 To demonstrate system performance, robust edge-case handling, and architectural optimizations, several exploratory testing modules were engineered at the bottom of the production pipeline.
