@@ -43,6 +43,13 @@ The system is built sequentially in a modular Google Colab pipeline:
   * `sentence-transformers` (State-of-the-Art Dense Text Embeddings)
 
 ---
+**Student Self-Analysis & Observations**
+
+## From my independent testing of the AI Research Paper Intelligence System, I discovered that:
+
+**1. Robustness to Errors:** The dense vector model (all-MiniLM-L6-v2) handles heavily misspelled search queries surprisingly well, successfully extracting relevant machine learning abstracts even when keywords like "deep learning" were misspelled.
+
+**2. Context Limitations:** When given an out-of-domain query (like a pizza recipe), the system still forces a match with the closest technical paper available because cosine similarity scores are relative. In a future production iteration, I would implement a minimum similarity score threshold (e.g., score > 0.40) to discard completely irrelevant queries.
 
 ## 📈 Next Steps & Planned Features
 * [ ] Implement an approximate nearest neighbors (ANN) search index using **FAISS** or **ChromaDB** for instant querying across all 117k+ records.
