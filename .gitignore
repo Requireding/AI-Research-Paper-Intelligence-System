@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL configuration
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Datasets and Large Files (Crucial for your project)
+*.csv
+*.json
+*.safetensors
+*.bin
+*.txt
+
+# Virtual environments
+venv/
+.venv/
+env/
